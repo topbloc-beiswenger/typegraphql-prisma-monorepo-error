@@ -1,0 +1,11 @@
+{
+  "name": "typegraphql-prisma-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

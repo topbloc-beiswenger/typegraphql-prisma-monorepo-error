@@ -1,0 +1,4 @@
+{
+  "packages": ["api", "prisma"],
+  "version": "0.0.0"
+}

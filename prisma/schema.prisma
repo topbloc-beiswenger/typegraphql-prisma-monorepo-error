@@ -1,0 +1,27 @@
+datasource db {
+    provider = "sqlite"
+    url      = "file:./dev.db"
+}
+
+generator client {
+    provider        = "prisma-client-js"
+    previewFeatures = ["interactiveTransactions"]
+}
+
+generator typegraphql {
+    provider = "typegraphql-prisma"
+    output   = "./node_modules/@generated/type-graphql"
+}
+
+model Organization {
+    id    Int    @id @default(autoincrement())
+    name  String
+    users User[]
+}
+
+model User {
+    id            Int            @id @default(autoincrement())
+    name          String
+    organizations Organization[]
+    email         String?
+}
