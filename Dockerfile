@@ -1,4 +1,4 @@
-FROM node:14.17.4 as base
+FROM node:16.14.2 as base
 EXPOSE 3000
 WORKDIR /node
 COPY package*.json ./
