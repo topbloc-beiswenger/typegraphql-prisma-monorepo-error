@@ -20,7 +20,7 @@ Prerequisites: Node v16.14.2
 
 1. In the root directory run the following
 `npm install`
-`npm bootstrap`
+`npm run bootstrap`
 
 2. In the `/prisma` directory run `npm run build`
 
