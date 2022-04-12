@@ -1,5 +1,5 @@
 FROM node:16.14.2 as base
-EXPOSE 3000
+EXPOSE 4000
 WORKDIR /node
 COPY package*.json ./
 COPY lerna.json ./
