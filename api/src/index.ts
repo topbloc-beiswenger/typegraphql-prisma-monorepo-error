@@ -1,6 +1,6 @@
 import "reflect-metadata";
 import express from "express";
-import { resolvers } from "@typegraphql-prisma-monorepo/prisma";
+import { CreateOrganizationResolver } from "@typegraphql-prisma-monorepo/prisma/dist";
 import { buildSchema } from "type-graphql";
 import { ApolloServer } from "apollo-server-express";
 import http from "http";
@@ -9,7 +9,7 @@ const main = async () => {
   const app = express();
 
   const schema = await buildSchema({
-    resolvers: [...resolvers],
+    resolvers: [CreateOrganizationResolver],
   });
 
   const httpServer = http.createServer(app);

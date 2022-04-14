@@ -9,7 +9,9 @@ generator client {
 }
 
 generator typegraphql {
-    provider = "typegraphql-prisma"
+    provider           = "typegraphql-prisma"
+    output             = "src/type-graphql"
+    emitTranspiledCode = true
 }
 
 model Organization {
